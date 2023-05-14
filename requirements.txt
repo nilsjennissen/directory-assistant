@@ -1,0 +1,14 @@
+pandas~=2.0.1
+matplotlib~=3.7.1
+numpy~=1.24.3
+seaborn~=0.12.2
+plotly~=5.14.1
+treelib~=1.6.4
+streamlit~=1.8.0
+langchain~=0.0.166
+openai~=0.23.1
+pygame~=2.4.0
+pyaudio~=0.2.11
+requests~=2.28.2
+gtts~=2.3.1
+altair~<5.0.0
