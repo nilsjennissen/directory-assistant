@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
         with:
           token: ${{ secrets.THE_GITHUB_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@master
         with:
           python-version: 3.8
 
@@ -32,7 +32,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.THE_GITHUB_TOKEN }}
 
       - name: Commit and push changes
-        run: |
-          git config --local user.email "nils@jennissen.org"
-          git config --local user.name "Nils Jennissen"
-          git diff --quiet && git diff --staged --quiet || (git commit -am "Update README" && git push)
+        uses: nilsjennissen/git-auto-commit-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: Update generated README
+          branch: main
+          commit_user_name: readme-scribe 🤖
+          commit_user_email: actions@github.com
+          commit_author: readme-scribe 🤖 <actions@github.com>
