@@ -26,14 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pathlib
 
-      - name: Update README
-        run: |
-          python dir_tree.py > README.md
-
-      - name: Commit and push if it changed
-        run: |
-          git diff
-          git config --local user.email "nilsjennissen@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -am "Update README" || exit 0
-          git push
+      - name: Update this repo's README
+        run: python dir_tree.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
