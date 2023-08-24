@@ -27,3 +27,11 @@ jobs:
       - name: Update README
         run: |
           python dir_tree.py >> README.md
+
+      - name: Commit and push if it was changed
+        run: |
+          git diff
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git commit -am "Update README" || exit 0
+          git push
