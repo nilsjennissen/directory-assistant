@@ -26,7 +26,7 @@ jobs:
 
       - name: Update README
         run: |
-          python dir_tree.py >> README.md
+          python dir_tree.py > README.md
 
       - name: Commit and push if it was changed
         run: |
