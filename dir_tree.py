@@ -21,14 +21,14 @@ class DisplayablePath(object):
         else:
             self.depth = 0
 
-    # Get the display name
+    # Get the display name from the path
     @property
     def displayname(self):
         if self.path.is_dir():
             return self.path.name + '/'
         return self.path.name
 
-    # Create the tree
+    # Create the tree structure
     @classmethod
     def make_tree(cls, root, parent=None, is_last=False, criteria=None):
         root = Path(str(root))
@@ -54,6 +54,7 @@ class DisplayablePath(object):
                 yield cls(path, displayable_root, is_last)
             count += 1
 
+    # Specify the default criteria to exclude directories/files
     @classmethod
     def _default_criteria(cls, path):
         return True
