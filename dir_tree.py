@@ -59,6 +59,7 @@ class DisplayablePath(object):
     def _default_criteria(cls, path):
         return True
 
+    # Get the display name from the path
     @property
     def displayname(self):
         if self.path.is_dir():
