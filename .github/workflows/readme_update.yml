@@ -33,7 +33,7 @@ jobs:
       - name: Commit and push if it changed
         run: |
           git diff
-          git config --local user.email "action@github.com"
+          git config --local user.email "nilsjennissen@github.com"
           git config --local user.name "GitHub Action"
           git commit -am "Update README" || exit 0
           git push
