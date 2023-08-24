@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main  # or the name of your default branch
-  schedule:
-    - cron: '0 0 * * *'  # this means the action will run every day at midnight
 
 jobs:
   update_readme:
