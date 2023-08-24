@@ -33,7 +33,6 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "nilsjennissen@github.com"
-          git config --local user.name "Nils Jennissen"
-          git commit -am "Update README"
-          git push
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git diff --quiet && git diff --staged --quiet || (git commit -am "Update README" && git push)
