@@ -27,7 +27,12 @@ jobs:
           pip install pathlib
 
       - name: Update this repo's README
-        uses: stefanzweifel/git-auto-commit-action@v4
         run: python dir_tree.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update README with the latest file tree
+          commit_options: '--no-verify --signoff'
+          repository: ${{ github.repository }}
+          branch: ${{ github.ref }}
