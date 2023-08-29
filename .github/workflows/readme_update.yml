@@ -33,15 +33,15 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          branch: daily-contribution
+          branch: daily-update
           # Set the Git credentials - replace this with your own secrets
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Open pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          title: "Daily Contribution"
-          commit-message: "Daily contribution"
-          branch: daily-contribution
+          title: "Update"
+          commit-message: "Daily update"
+          branch: daily-update
           base: main
           # Set the pull request body - replace this with your own content
           body: "This pull request was created automatically by a GitHub Actions workflow to make a daily contribution."
