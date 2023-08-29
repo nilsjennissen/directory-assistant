@@ -29,10 +29,11 @@ jobs:
       - name: Update this repo's README
         run: python dir_tree.py
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Update README with the latest file tree
-          commit_options: '--no-verify --signoff'
-          repository: ${{ github.repository }}
-          branch: ${{ github.ref }}
+      - name: Commit and push if changed
+        run: |-
+          git diff
+          git config --global user.email "actions@users.noreply.github.com"
+          git config --global user.name "Readme updater"
+          git add -A
+          git commit -m "Updated content" || exit 0
+          git push
