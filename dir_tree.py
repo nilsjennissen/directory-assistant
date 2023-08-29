@@ -89,5 +89,5 @@ class DisplayablePath(object):
 # Call the function with the path to the directory you want to print
 with open('README.md', 'w') as f:
     for path in DisplayablePath.make_tree(Path(os.path.dirname(os.path.realpath(__file__)))):
-        f.write(path.displayable())
+        f.write(f'{path.displayable()}\n')
 
