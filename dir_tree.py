@@ -1,4 +1,5 @@
 #%% SCRIPT TO CHECK THE DIRECTORY TREE
+
 # Import pathlib for path generation
 from pathlib import Path
 import os
