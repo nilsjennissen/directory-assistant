@@ -27,7 +27,7 @@ jobs:
           pip install pathlib
 
       - name: Update this repo's README
-        run: python dir_tree.py
+        run: python dir_tree.py >> README.md
 
       - name: Commit and push if changed
         run: |-
