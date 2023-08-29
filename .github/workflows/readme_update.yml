@@ -27,6 +27,7 @@ jobs:
           pip install pathlib
 
       - name: Update this repo's README
+        uses: stefanzweifel/git-auto-commit-action@v4
         run: python dir_tree.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
