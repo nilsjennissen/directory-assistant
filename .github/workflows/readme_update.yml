@@ -5,7 +5,7 @@ on:
     branches:
       - main  # or the name of your default branch
   schedule:
-    - cron: '0 0 * * *'  # this means the action will run every day at midnight
+    - cron: '0 1 * * *'  # this means the action will run every day at midnight
 
 jobs:
   make-contribution:
