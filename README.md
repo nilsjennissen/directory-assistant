@@ -1,4 +1,4 @@
-directory_assistant/
+directory-assistant/
 ├── dir_tree.py
 ├── notebooks/
 │   ├── directory_csv.ipynb
@@ -9,4 +9,4 @@ directory_assistant/
 ├── streamlit_directory.py
 ├── streamlit_langchain.py
 └── streamlit_template.py
-Tue May 28 19:05:13 UTC 2024
+Wed May 29 19:04:51 UTC 2024
