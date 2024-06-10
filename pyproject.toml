@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "assistant"
+authors = ["Nils Jennissen <nils@jennissen.org>"]
+version = "0.1.0"
+description = ""
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10,<3.12"
+langchain = "^0.2.3"
+langchain-community = "^0.2.4"
+nbformat = "^5.10.4"
+streamlit = "^1.35.0"
+requests = "^2.32.3"
+pandas = "^2.2.2"
+pyaudio = "^0.2.14"
+pygame = "^2.5.2"
+openai = "^1.33.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
