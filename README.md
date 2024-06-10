@@ -5,8 +5,9 @@ directory-assistant/
 │   └── directory_glob.ipynb
 ├── README.md
 ├── requirements.txt
-├── streamlit_demo.py
-├── streamlit_directory.py
-├── streamlit_langchain.py
-└── streamlit_template.py
-Sun Jun  9 19:04:57 UTC 2024
+└── streamlit/
+    ├── streamlit_demo.py
+    ├── streamlit_directory.py
+    ├── streamlit_langchain.py
+    └── streamlit_template.py
+Mon Jun 10 15:29:46 UTC 2024
