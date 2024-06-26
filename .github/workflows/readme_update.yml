@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '0 19 * * *'  # this means the action will run every day at 7pm UTC
 
+  workflow_dispatch:  # this means the action will run when you trigger it manually
+
+
 jobs:
   make-contribution:
     runs-on: ubuntu-latest
