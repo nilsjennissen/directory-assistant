@@ -1,5 +1,8 @@
 directory-assistant/
 ├── dir_tree.py
+├── directory/
+│   └── docs/
+│       └── text.txt
 ├── LICENCE
 ├── notebooks/
 │   ├── directory_csv.ipynb
@@ -13,4 +16,4 @@ directory-assistant/
     ├── streamlit_directory.py
     ├── streamlit_langchain.py
     └── streamlit_template.py
-Mon Jun 17 19:04:37 UTC 2024
+Wed Jun 26 19:04:45 UTC 2024
