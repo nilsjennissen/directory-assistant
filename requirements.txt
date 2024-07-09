@@ -8,5 +8,5 @@ streamlit~=1.11.1
 langchain~=0.1.0
 openai~=0.23.1
 pyaudio~=0.2.11
-requests~=2.31.0
+requests~=2.32.0
 gtts~=2.3.1
