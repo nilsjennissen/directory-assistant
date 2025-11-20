@@ -6,7 +6,9 @@ directory-assistant/
 ├── LICENCE
 ├── notebooks/
 │   ├── directory_csv.ipynb
-│   └── directory_glob.ipynb
+│   ├── directory_glob.ipynb
+│   └── file_description.ipynb
+├── poetry.lock
 ├── pyproject.toml
 ├── README.md
 ├── requirements.txt
@@ -16,4 +18,4 @@ directory-assistant/
     ├── streamlit_directory.py
     ├── streamlit_langchain.py
     └── streamlit_template.py
-Tue Oct 28 19:05:11 UTC 2025
+Thu Nov 20 19:05:44 UTC 2025
