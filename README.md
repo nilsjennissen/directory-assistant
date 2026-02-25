@@ -13,9 +13,10 @@ directory-assistant/
 ├── README.md
 ├── requirements.txt
 ├── scheduled.py
-└── streamlit/
-    ├── streamlit_demo.py
-    ├── streamlit_directory.py
-    ├── streamlit_langchain.py
-    └── streamlit_template.py
-Tue Feb 24 19:24:26 UTC 2026
+├── streamlit/
+│   ├── streamlit_demo.py
+│   ├── streamlit_directory.py
+│   ├── streamlit_langchain.py
+│   └── streamlit_template.py
+└── uv.lock
+Wed Feb 25 00:49:59 UTC 2026
